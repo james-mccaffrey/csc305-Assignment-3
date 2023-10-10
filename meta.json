@@ -4,7 +4,23 @@
             "apiComponents": {
                 "ApiContainer": {
                     "id": "ApiContainer",
-                    "children": []
+                    "children": [
+                        {
+                            "type": "AdMob Interstitial",
+                            "translatedName": "AdMob Interstitial",
+                            "isApi": true,
+                            "reactType": "AdMobInterstitial",
+                            "properties": {
+                                "AdUnitID": "ca-app-pub-1750023366035353/6206962531",
+                                "AdUnitID_iOS": "ca-app-pub-3940256099942544/1033173712",
+                                "TestMode": true
+                            },
+                            "children": [],
+                            "id": "c8f2a299-e30b-4759-9484-b447075bc720",
+                            "thunkableVersion": 423,
+                            "name": "AdMob_Interstitial1"
+                        }
+                    ]
                 }
             },
             "assets": {
@@ -21,8 +37,8 @@
                     "createdAt": "2023-09-25T22:24:51.925Z",
                     "updatedAt": "2023-09-25T22:24:51.925Z",
                     "__v": 0,
-                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/64f9cf139e120672bf02d03e/projects/6509a9f7c1b64a11c8d3d47d/assets/651208b3aaa9ea5c9386e42f?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20230925%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230925T222451Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=3ad4dbc12b81d60b3601437a5aee71cd673a937f299bf887cbe904d12c68e46b7ebd118ce508e78c09d7ff5e372276d26853a8b9bc98d80a963ba52fad244ccb5abe8f5a8baec8e45c29766c112173465e42be7e4546a3347c39691024fe83481c342bc9e6d054b059a7fed758ed96bb790ada8e8fd57aef86480de87f5424fde17f761e394732f239de07ba5ab48202d78c51c5c13c255553e858416252bb94ebb3af82b31f957412c240e9ecf790c1bce71619afbf345e560c8ac3386a3843813529ce6e23c6836193f3871d5b683595d1eb4dd65c26a41996346f36f462ddd32a9348ededfd397d65a975cbf8eded5645284cc805830c8438ba1fb1a2fd31",
-                    "signedUrlExpirationTime": 1695853491956
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/64f9cf139e120672bf02d03e/projects/6509a9f7c1b64a11c8d3d47d/assets/651208b3aaa9ea5c9386e42f?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20231010%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20231010T004440Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=2f327500479d0c1ae21ccbdd9c2538265363aeb4be25ac30dd815c6b64abe85fdfa8f8d3f9f666f816338f92614f711e13f426fe83600aea0be6d45bb4acff6ee61feea57a59e2895bd4c368944352cf50d57bf0e58dffcddb23aa327e6e1d060cd66dbfa203d40f90587b8d83927bbae895633bc4bc7c9b1c637dc13e75ded571ea1f222382905b45e4e804bfb023b8ca7c5574b4ba6d80290005d593c0868923aa00bc2bff6b8056872563b63086ddcbc1a3da830c474fae2f8b9e1c35a348db89b81188bd9d41e7ed4b01214f8403e6a725c8f477aff1dc871bf9b378cc4fa83d5497096ea9ea309a1f28e40eda852b6578fade43b1b4c4c5573073520997",
+                    "signedUrlExpirationTime": 1697071480974
                 }
             },
             "backendUpgradeVersion": 21,
@@ -68,6 +84,9 @@
             "components": {
                 "children": [
                     {
+                        "id": "3b646917-bd78-45d9-8869-b4e62da000fb"
+                    },
+                    {
                         "type": "Drawer Navigator",
                         "translatedName": "Drawer Navigator",
                         "reactType": "DrawerNavigator",
@@ -98,9 +117,6 @@
                         "id": "1c86eb20-1a38-4f73-8a19-49991c0b3f77",
                         "thunkableVersion": 421,
                         "name": "Drawer_Navigator1"
-                    },
-                    {
-                        "id": "3b646917-bd78-45d9-8869-b4e62da000fb"
                     }
                 ]
             },
@@ -153,7 +169,7 @@
                 "appleOAuthWebClientID": null,
                 "appleOAuthWebRedirectURI": null,
                 "admobAppIdIOS": null,
-                "admobAppIdAndroid": null,
+                "admobAppIdAndroid": "ca-app-pub-1750023366035353~5180821320",
                 "admobUserTrackingUsageDescription": null,
                 "__typename": "ProjectSettings"
             },
@@ -202,11 +218,11 @@
                 "appleOAuthWebClientID": null,
                 "appleOAuthWebRedirectURI": null,
                 "admobAppIdIOS": null,
-                "admobAppIdAndroid": null,
+                "admobAppIdAndroid": "ca-app-pub-1750023366035353~5180821320",
                 "admobUserTrackingUsageDescription": null,
                 "__typename": "ProjectSettings"
             },
-            "hasAdmob": false,
+            "hasAdmob": true,
             "hasBluetoothLowEnergy": null,
             "hasPushNotification": false,
             "hasAssistant": null,
@@ -215,7 +231,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "0",
+            "totalCopy": "1",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
